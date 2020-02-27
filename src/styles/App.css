@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1600px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.products {
+  border: solid 1px black;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart {
+  border: solid 1px black;
+  width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 220px;
+}
+
+.products div:hover {
+  border: gray 1px solid;
+}
+
+.products {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.products button:hover {
+  background-color: rgb(228, 192, 65);
+}
