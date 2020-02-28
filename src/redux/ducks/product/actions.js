@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 
 // 2. action definitions
-const GET_PRODUCTS = "products/GET_PRODUCTS"
+const GET_PRODUCTS = "cart/GET_PRODUCTS"
 
 // 3. initial state
 const initialState = {

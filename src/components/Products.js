@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react"
+import axios from "axios"
 import { useProducts } from "../hooks"
+import { useItems } from "../hooks"
 
 export default props => {
   const { products } = useProducts()
+  const { add } = useItems()
 
   return (
     <div>
@@ -23,8 +26,10 @@ export default props => {
           <div key={product.id}>
             <img src={`/assets/${product.sku}_1.jpg`} />
             <p>{product.title}</p>
-            <p>${product.price}</p>
-            <button className="addtocart">Add to cart</button>
+            <p>${product.price.toFixed(2)}</p>
+            <button onClick={e => add(product)} className="addtocart">
+              Add to cart
+            </button>
           </div>
         ))}
       </div>

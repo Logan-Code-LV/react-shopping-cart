@@ -15,15 +15,14 @@ html {
 }
 
 .products {
-  border: solid 1px black;
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .cart {
-  border: solid 1px black;
-  width: 400px;
+  width: 100px;
 }
 
 .header {
@@ -48,6 +47,7 @@ button {
   height: 50px;
   background-color: black;
   color: white;
+  margin-bottom: 10px;
 }
 
 .products button:hover {

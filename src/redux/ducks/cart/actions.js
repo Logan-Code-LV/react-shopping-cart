@@ -4,51 +4,52 @@ import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 
 // 2. action definitions
-const EXAMPLE_ACTION = "example/EXAMPLE_ACTION"
+const GET_ITEM = "cart/GET_ITEM"
 
 // 3. initial state
 const initialState = {
-  example: "example"
+  cart: []
 }
 
 // 4. reducer
 export default (state = initialState, action) => {
   switch (action.type) {
-    case EXAMPLE_ACTION:
-      return { ...state, example: "foobar" }
+    case GET_ITEM:
+      return { ...state, cart: action.payload }
     default:
       return state
   }
 }
 
 // 5. action creators
-function someSyncAction() {
-  return {
-    type: EXAMPLE_ACTION
+function getItems() {
+  return dispatch => {
+    axios.get("/cart").then(resp => {
+      dispatch({
+        type: GET_ITEM,
+        payload: resp.data
+      })
+    })
   }
 }
 
-function someAsyncAction() {
+function addItem(product) {
   return dispatch => {
-    setTimeout(() => {
-      dispatch({
-        type: EXAMPLE_ACTION
-      })
-    }, 1000)
+    axios.post("/cart", product).then(resp => {
+      dispatch(getItems())
+    })
   }
 }
 
 // 6. custom hook
-export function useExample() {
+export function useItems() {
   const dispatch = useDispatch()
-  const example = useSelector(appState => appState.exampleState.example)
-
-  const syncaction = dispatch(someSyncAction())
-  const asyncaction = dispatch(someAsyncAction())
+  const cart = useSelector(appState => appState.cartState.cart)
+  const add = product => dispatch(addItem(product))
 
   useEffect(() => {
-    console.log("mounting component")
+    dispatch(getItems())
   }, [])
 
-  return { example, syncaction, asyncaction }
+  return { cart, add }
 }
