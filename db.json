@@ -350,26 +350,25 @@
   ],
   "cart": [
     {
-      "id": 16,
-      "sku": 10412368723880252,
-      "title": "Short Sleeve T-Shirt",
-      "description": "",
+      "id": 15,
+      "sku": 11033926921508488,
+      "title": "Skuul",
+      "description": "Treino 2014",
       "availableSizes": [
-        "XS",
         "X",
         "L",
-        "ML",
-        "XL"
+        "XL",
+        "XXL"
       ],
-      "style": "Grey",
-      "price": 75,
+      "style": "Black T-Shirt with front print",
+      "price": 14,
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
       "img": {
-        "normal": "/assets/10412368723880252_1.jpg",
-        "thumb": "/assets/10412368723880252_2.jpg"
+        "normal": "/assets/11033926921508488_1.jpg",
+        "thumb": "/assets/11033926921508488_2.jpg"
       }
     },
     {
@@ -391,25 +390,6 @@
       "img": {
         "normal": "/assets/10686354557628304_1.jpg",
         "thumb": "/assets/10686354557628304_2.jpg"
-      }
-    },
-    {
-      "id": 13,
-      "sku": 51498472915966370,
-      "title": "Dark Thug Blue-Navy T-Shirt",
-      "description": "",
-      "availableSizes": [
-        "M"
-      ],
-      "style": "Front print and paisley print",
-      "price": 29.45,
-      "installments": 5,
-      "currencyId": "USD",
-      "currencyFormat": "$",
-      "isFreeShipping": true,
-      "img": {
-        "normal": "/assets/51498472915966370_1.jpg",
-        "thumb": "/assets/51498472915966370_2.jpg"
       }
     }
   ]

@@ -7,7 +7,8 @@ html {
   box-sizing: inherit;
 }
 
-.cartimg {
-  width: 100px;
-  height: 100px;
+.carticon {
+  font-size: 40px;
+  color: white;
+  background-color: black;
 }

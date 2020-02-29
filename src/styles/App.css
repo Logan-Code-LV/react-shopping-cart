@@ -22,7 +22,8 @@ html {
 }
 
 .cart {
-  width: 100px;
+  width: 200px;
+  transition: 1s;
 }
 
 .header {
@@ -50,6 +51,24 @@ button {
   margin-bottom: 10px;
 }
 
+.cartimg {
+  width: 100px;
+}
+
 .products button:hover {
   background-color: rgb(228, 192, 65);
+}
+
+.carticon {
+  font-size: 40px;
+  color: white;
+  background-color: black;
+}
+
+#open {
+  width: 500px;
+}
+
+#close {
+  width: 0px;
 }
