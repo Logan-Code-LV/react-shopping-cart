@@ -5,7 +5,7 @@ import "../styles/Cart.css"
 import { FaShoppingCart } from "react-icons/fa"
 
 export default function(e) {
-  const { cart, toggle, isOpen, del } = useItems()
+  const { cart, toggle, isOpen, del, total } = useItems()
 
   return (
     <div className="cart">
@@ -21,6 +21,9 @@ export default function(e) {
           <button onClick={e => del(item)}>X</button>
         </div>
       ))}
+      <div className="total">
+        <h3> Total: ${total}</h3>
+      </div>
     </div>
   )
 }
