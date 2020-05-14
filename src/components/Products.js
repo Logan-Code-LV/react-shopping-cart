@@ -10,8 +10,9 @@ export default props => {
   return (
     <div>
       <div className="header">
-        <h4>Sizes:</h4>
         <h6>16 Prodct(s) found.</h6>
+      </div>
+      <div class="sort">
         <h5> Order by</h5>
         <select name="sort">
           <option value="" disabled selected hidden>

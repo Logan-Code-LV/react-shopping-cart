@@ -10,6 +10,7 @@
     "material-icons-react": "^1.0.4",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
+    "react-collapsible": "^2.7.0",
     "react-dom": "^16.8.6",
     "react-icons": "^3.9.0",
     "react-redux": "^7.1.0",

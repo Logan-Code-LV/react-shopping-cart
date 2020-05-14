@@ -31,12 +31,12 @@ html {
   justify-content: space-between;
 }
 
-img {
-  width: 220px;
+.sort {
+  text-align: right;
 }
 
-.products div:hover {
-  border: gray 1px solid;
+img {
+  width: 220px;
 }
 
 .products {
