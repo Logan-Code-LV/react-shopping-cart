@@ -134,6 +134,9 @@ html {
   cursor: pointer;
 }
 
+.cartCheckout button {
+  color: white;
+}
 
 
 div.Collapsible {
@@ -142,8 +145,18 @@ div.Collapsible {
   width: 250px;
   height: 50px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .cancel {
   width: 50px
+}
+
+.checkoutbutton {
+  color: white;
+  text-decoration: none;
+}
+
+.itemincart {
+  border: solid;
 }

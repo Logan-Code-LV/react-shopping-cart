@@ -17,13 +17,12 @@ export default function(e) {
     //     <FaShoppingCart />
     //   </button>
     <div>
-      <Collapsible trigger="View Your Cart">
+      <Collapsible trigger="Click to View Your Cart">
       <div className="cartHeading">
-        <TiShoppingCart className="cartIcon" />
         <p className="cartTitle">{cart.length} item(s) are in your cart</p>
       </div>
       {cart.map(item => (
-        <div key={item.id}>
+        <div class="itemincart" key={item.id}>
           <img className="cartimg" src={`/assets/${item.sku}_2.jpg`} />
           <p>{item.title}</p>
           <p>${item.price.toFixed(2)}</p>
@@ -35,7 +34,7 @@ export default function(e) {
       </div>
       <div className="cartCheckout">
         <button class>
-        <Link to='checkout'><p>CHECKOUT</p></Link>
+        <Link to='checkout'><p class="checkoutbutton">CHECKOUT</p></Link>
         </button>
       </div>
       </Collapsible>

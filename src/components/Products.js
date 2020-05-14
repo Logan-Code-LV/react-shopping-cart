@@ -9,6 +9,7 @@ export default props => {
 
   return (
     <div>
+      <h1>Logan-Code-LV's Ecommerce Application Prototype</h1>
       <div className="header">
         <h6>16 Prodct(s) found.</h6>
       </div>

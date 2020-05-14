@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Logan-Code-LV.github.io/react-shopping-cart",
   "name": "react-shopping-cart",
   "version": "1.0.0",
   "private": true,
@@ -21,6 +22,8 @@
     "validator": "^11.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"json-server --watch -p 3001 db.json\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,5 +54,8 @@
   },
   "description": "",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
